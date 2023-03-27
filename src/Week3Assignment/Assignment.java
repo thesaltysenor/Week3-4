@@ -21,6 +21,8 @@ public class Assignment {
             sumOfLetters += name.length();
 
             System.out.println(sumOfLetters);
+
+            // I Hope this makes it to github
         }
     }
 }
