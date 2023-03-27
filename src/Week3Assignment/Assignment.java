@@ -22,7 +22,7 @@ public class Assignment {
 
             System.out.println(sumOfLetters);
 
-            // I Hope this makes it to github
+            // I Hope this makes it to github please
         }
     }
 }
