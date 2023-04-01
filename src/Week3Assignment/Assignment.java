@@ -3,7 +3,7 @@ public class Assignment {
 
     public static void main(String[] args) {
         int[] age = {3, 9, 23, 64, 2, 8, 28, 93, 3};
-        int result = age[0] - age[age.length - 1];
+        int result = age[1] - age[age.length - 1];
 
         System.out.println(result);
         double sum = 0;
@@ -39,6 +39,8 @@ public class Assignment {
         // it dynamic if you need to add more to the array
         // 4. you would use [0] since 0 marks the first element
 
+        System.out.println("SPACE BREAK HERE");
+
         //5
        int[] nameLengths = new int[names.length];
        for (int i = 0; i < nameLengths.length; i++) {
@@ -51,10 +53,17 @@ public class Assignment {
            System.out.println(nameLengthSum);
        }
 
+
+        System.out.println("SPACE BREAK HERE");
+
        //7
        String moreNonsense = nonSense("Hello", 3);
         p("thing");
        System.out.println(moreNonsense);
+
+
+
+        System.out.println("SPACE BREAK HERE");
 
        //8
         String firstName = "John";
@@ -63,15 +72,24 @@ public class Assignment {
         System.out.println(fullName);
 
 
+
+        System.out.println("SPACE BREAK HERE");
+
         //9
         int[] array = {5, 10, 15, 20, 25};
         boolean isSumGreaterThan100 = isSumGreaterThan100(array);
         System.out.println(isSumGreaterThan100);
 
+
+        System.out.println("SPACE BREAK HERE");
+
         //10
         double[] array1 = {1.4, 2.1, 2.5, 5.6};
         double average1 = averageOfAllElements(array1);
         System.out.println(average);
+
+
+        System.out.println("SPACE BREAK HERE");
 
         //11
         double[] arr1 = { 1.5, 2.0, 3.5, 2.5 };
@@ -79,14 +97,19 @@ public class Assignment {
         boolean isAvgOfFirstGreaterThanSecond = isAverageOfFirstArrayGreaterThanSecond(arr1, arr2);
         System.out.println("Is the average of the first array greater than the average of the second array? " + isAvgOfFirstGreaterThanSecond);
 
+
+        System.out.println("SPACE BREAK HERE");
+
         //12
         boolean isHotOutside = true;
         double moneyInPocket = 15.0;
         boolean willBuy = willBuyDrink(isHotOutside, moneyInPocket);
         System.out.println("will you buy a drink? " + willBuy);
 
+        System.out.println("SPACE BREAK HERE");
+
         //13
-        String[] membershipStatus = {"isMember", "isNotMember", "isNotMember", "isMember", "isTurtle"};
+        String[] membershipStatus = {"isMember", "isNotMember", "isNotMember", "isMember", "isMember"};
         boolean[] isVoteAccepted = vote(membershipStatus);
         for (int i = 0; i < isVoteAccepted.length; i++) {
             if (isVoteAccepted[i]) {
@@ -169,7 +192,9 @@ public class Assignment {
 
     }
 
-    //13
+    //13 this method will tell a member or nonmember if their vote has been accepted.
+    // Currently I am dealing with union voting issues and this idea came to mind to a sort of voting application
+    // that would tell a voter if their vote was accepted or not depending on their membership status
     public static boolean[] vote(String[] membershipStatus) {
         boolean[] isVoteAccepted = new boolean[membershipStatus.length];
         for (int i = 0; i < membershipStatus.length; i++) {
